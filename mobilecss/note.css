@@ -1,0 +1,350 @@
+@media screen and (max-width: 767px){
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    p{
+        font-family: 'roboto', sans-serif;
+    }
+
+    h1{
+        font-weight: 900;
+        font-size: 1.5rem;
+        font-family: 'shrikhand', sans-serif;
+    }
+
+    .loader{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        height: 100vh;
+        position: fixed;
+        /* inset permet de gérer leposittionnement de manière générale avec top, right, bottom, left */
+        inset: 0;
+        z-index: 2;
+        opacity: 0.8;
+        /* ajout de animation-fillmode avec la valeur 'forwards' pour que l'animation conserve la position finale */
+        animation: disparaitre 1s ease 2s forwards;
+        transform-origin: bottom;
+    }
+
+    .loader span{
+        font-size: 1.8rem;
+        padding-left: 10px;
+        text-transform: capitalize;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    @keyframes disparaitre {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
+    }
+
+    header .logo{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        box-shadow: 0px 1px 14px 2px rgba(158,158,158,0.75);
+        -webkit-box-shadow: 0px 1px 14px 2px rgba(158,158,158,0.75);
+        -moz-box-shadow: 0px 1px 14px 2px rgba(158,158,158,0.75);
+        border-bottom: 0.5px solid gray;
+    }
+
+    header .logo i{
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        font-size: 1.5rem;
+        color: #111;
+    }
+
+    header img{
+        margin: auto; 
+        width: 50%;
+    }
+
+    .img-restau img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .renseignements{
+        position: relative; 
+        margin-top: -42%;
+        padding-left: 18px;
+        padding-right: 10px;
+        display: grid;
+        padding-top: 20px;
+        background-color: #fff; 
+        border-top-left-radius: 50px; 
+        border-top-right-radius: 50px;
+    }
+
+    .renseignements .fonctionnement-types{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .renseignements .titre-restau{
+        display: flex;
+        align-items: center;
+    }
+
+    .renseignements .titre-restau .heart .fullheart{
+        color: transparent;
+        background-image: linear-gradient(to top, rgba(147, 86, 220, .9), rgba(255, 121, 218,.9));
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .renseignements .titre-restau .heart .fullheart:hover{
+        color: transparent;
+        background-image: linear-gradient(to top, rgba(147, 86, 220, .9), rgba(255, 121, 218,.9));
+        background-clip: text;
+        -webkit-background-clip: text;     
+        opacity: 1;
+    }
+
+    .renseignements .titre-restau .heart i{
+        position: absolute; 
+        font-size: 2rem;
+        left: 80%;
+        transform: translateY(-50%);
+    }
+
+    .renseignements .titre-restau .heart{
+        margin-left: 40px;
+    }
+    
+    .renseignements span{
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'roboto', sans-serif;
+    }
+
+    .renseignements span::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 41px;
+        background-color: #99E2D0;
+        top: 22px;
+    }
+
+    .renseignements .row{
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        background: #F6F6F6;
+        border-radius: 22px;
+        height: 79px;
+        padding-left: 12px;  
+        position: relative;
+        width: 100%;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.36); 
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.36);
+    }
+
+    .renseignements .row:hover .confirmation{
+        margin-right: 0;
+        transition: all 1s;
+    }
+
+    .renseignements .row .prix{
+        font-weight: bold;
+        margin-top: 14%;
+        padding-right: 7px;
+    }
+
+    .renseignements .row #price1{
+        margin-right: -20%;
+    }
+
+    .renseignements .row #price2{
+        margin-right: -34%;
+    }
+
+    .renseignements .row #price3{
+        margin-right: 4%;
+    }
+
+    .renseignements .row #price4{
+        margin-right: -25%;
+    }
+
+    .renseignements .row #price5{
+        margin-right: -9%;
+        padding-right: 10px;
+    }
+
+    .renseignements .row #price6{
+        margin-right: -18%;
+    }
+
+    .renseignements .row #price7{
+        margin-right: -10%;
+    }
+
+    .renseignements .row .titre{
+        font-weight: bold;
+        font-size: 1rem;
+        width: 112%;
+    }
+
+    .renseignements .row .suite{
+        position: absolute;
+        bottom: 1px;
+        font-size: .9rem;
+    }
+
+    .renseignements .row:hover .suite{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 215px;
+        transition: all 2s ease;
+    }
+
+    .renseignements .row .row-type #suite1{
+        width: 255px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .renseignements .row:hover #suite1{
+        width: 215px;
+        transition: all 1.5s ease;
+    }
+
+    .renseignements .row .confirmation{
+        display: none;  
+        background-color: #99E2D0;
+        width: 65px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        margin-right: -86px;
+        border-top-right-radius: 22px;
+        border-bottom-right-radius: 22px;
+    }
+
+    .renseignements .row .confirmation .icone{
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .renseignements .row .confirmation svg path{
+        fill: #99E2D0;
+    }
+
+    .renseignements .row .confirmation .icone svg{
+        padding-top: 4px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .renseignements .row:hover svg{
+        animation: rotation .75s ease-in-out;
+    }
+
+    @keyframes rotation{
+        0%{
+            transform: rotate(-270deg);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    }
+
+    .renseignements button{
+        box-shadow: 0px 2px 3px 2px rgba(158,158,158,0.5);
+        -webkit-box-shadow: 0px 2px 3px 2px rgba(158,158,158,0.5);
+        -moz-box-shadow: 0px 2px 3px 2px rgba(158,158,158,0.5);
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #fff;
+        border: none;
+        margin-left: 65px;
+        border-radius: 25px;
+        width: 60%;
+        height: 48px;
+        margin-top: 10px;
+        background: linear-gradient(#AA5DDC, #E36FDA);
+        margin-top: 50px;
+        font-family: 'roboto', sans-serif;
+    }
+
+    .renseignements button:hover{
+        box-shadow: 15px 17px 17px -11px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 15px 17px 17px -11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 15px 17px 17px -11px rgba(0,0,0,0.75);
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,7,96,1) 0%, rgba(164,21,240,1) 0%, rgba(162,96,219,1) 0%, rgba(37,21,40,1) 0%, rgba(93,45,135,1) 0%, rgba(173,33,182,1) 0%, rgba(201,32,222,1) 0%, rgba(194,136,232,1) 0%, rgba(211,58,215,1) 0%, rgba(205,24,232,1) 0%, rgba(189,62,219,1) 100%, rgba(147,69,226,1) 100%, rgba(162,109,215,1) 100%, rgba(162,113,214,1) 100%);
+    }
+
+    footer{
+        background: #353535;
+        margin-top: 60px;
+        color: #fff;
+        padding-left: 20px;
+        padding-top: 30px;
+        height: 100%;
+        padding-bottom: 20%;    
+    }
+
+    footer #title{
+        font-size: 1.8rem;
+        font-family: 'shrikhand', sans-serif;
+        font-weight: 800;
+    }
+
+    footer .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 7px;
+    }
+
+    footer .content span{
+        font-family: 'Roboto',sans-serif; 
+        font-size: 1.5rem;
+    }
+    
+    footer .content .box span{
+        padding-left: 20px;
+        padding-left: 10px;
+    } 
+
+    .content .box #spoon{
+        margin-left: 5px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Roboto',sans-serif; 
+        font-size: 1.5rem;
+    }
+}

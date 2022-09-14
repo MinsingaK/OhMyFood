@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link rel="shorcut icon" href="../images/restaurants/alien-153542__340.jpg">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="../mobilecss/palette.css">
+    <title>La palette du goût</title>
+</head>
+<body>
+    <!-- <div class="loader">
+        <i class="fas fa-circle-notch fa-2x fa-spin"></i>
+        <span>chargement ...</span>
+    </div> -->
+    <header>
+        <div class="logo">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../images/logo/ohmyfood.png" alt="logo du site">
+        </div>
+    </header>
+    <div class="img-restau">
+        <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plats du restaurant">
+    </div>
+    <div class="renseignements">
+        <div class="titre-restau">
+            <h1>La palette du goût</h1>
+            <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart fullheart"></i>
+            </div>
+        </div>
+        <div class="fonctionnement-types">
+            <span id="first">entrees</span>
+            <div class="row group1">
+                <div class="row-type">
+                    <p class="titre">Fricassée d'escargot</p>
+                    <p class="suite">Au piment d'espelette</p>
+                </div>
+                <p class="prix">25€</p>
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>
+            </div>           
+            <div class="row group2">
+                <div class="row-type">
+                    <p class="titre">Foie gras de canard mi-cuit</p>
+                    <p class="suite">Et ses copeaux de truffe noire</p>
+                </div>
+                <p class="prix" id="price1">35€</p>
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>
+            </div>           
+            <div class="row group3">            
+                <div class="row-type">
+                    <p class="titre">Oeuf au plat</p> 
+                    <p class="suite" id="suite1">Assaisonnée à la truffe sur lit de caviar</p>            
+                </div>   
+                <p class="prix" id="price2">20€</p>       
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="fonctionnement-types">    
+            <span id="second">plats</span>        
+            <div class="row group1">
+                <div class="row-type">
+                    <p class="titre">Filet de boeuf aux herbes</p>
+                    <div class="surplus" id="suite2">
+                        Acommpagné de sa ribembelle de légumes
+                    </div>
+                </div>    
+                <p class="prix" id="price3">40€</p> 
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>      
+            </div>           
+            <div class="row group2"> 
+                <div class="row-type">
+                    <p class="titre">Parmentier de queue de boeuf</p>
+                    <p class="suite" id="suite3">A la truffe noire sur sa purée de panais</p>
+                </div>  
+                <p class="prix" id="price4">35€</p>  
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>         
+            </div>            
+            <div class="row group3"> 
+                <div class="row-type">
+                    <p class="titre">Filet de Turbot</p>
+                    <p class="suite">Aux agrumes</p>
+                </div> 
+                <p class="prix" id="price5">44€</p>
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fonctionnement-types">
+            <span id="third">desserts</span>
+            <div class="row group1">   
+                <div class="row-type">
+                    <p class="titre">Paris-Brest</p>
+                    <p class="suite">Revisité</p>
+                </div> 
+                <p class="prix" id="price6">18€</p>
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="row group2" id="row2">
+                <div class="row-type">
+                    <p class="titre" id="titre1">Macaron au chocolat d'exception</p>
+                    <p class="suite" id="suite4">Et glace à la vanille de Madagascar</p>
+                </div> 
+                <p class="prix" id="price7">22€</p>  
+                <div class="confirmation" id="confirm">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>           
+            </div>           
+            <div class="row group3"> 
+                <div class="row-type">
+                    <p class="titre">Mousse au chocolat</p>
+                    <p class="suite" id="suite5">Au piment d'espelette et à la truffe noire</p>   
+                </div>
+                <p class="prix">23€</p>
+                <div class="confirmation">
+                    <div class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button>Commander</button>
+    </div>
+    <footer>
+        <span id="title">ohmyfood</span>
+        <div class="content">
+            <div class="box">
+                <i class="fa-solid fa-utensils"></i>
+                <span id="spoon">Proposer un restaurant</span>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <span>Devenir partenaire</span>
+            </div>
+            <span>Mentions légales</span>
+            <!-- utiliser la commande mailto ici -->
+            <a href="mailto:ohmyfood@gmail.fr">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
